@@ -2,7 +2,7 @@ var matcher = /\/archive\/index.php\/t-/;
 var token = "#redirecting";
 
 var is_vBulletin = function() {
-  return document.body.innerText.indexOf('vBulletin') !== -1;
+  return document.body.innerText.indexOf('vBulletin') !== -1 || document.body.innerText.indexOf('View Full Version') !== -1;
 };
 
 var getPageNumber = function(url) {
